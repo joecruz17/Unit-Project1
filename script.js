@@ -11,6 +11,8 @@ class Pokemon {
 
 let pikachu = new Pokemon ("Pikachu", 100, "ElectricType") 
 
+function PokeAtk()
+
 
 function ThunderBolt(target) {
     let damage = 20
@@ -44,4 +46,10 @@ function wingAtk(target) {
     if(target.type === ElectricType) {
         target.HP -= damage / 2
         } else target.HP -= damage
+}
+
+function blastBurn(target, user) {
+    let damage = 45
+    target.HP -= damage
+    user.HP -= 30
 }
