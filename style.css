@@ -1,0 +1,23 @@
+
+div {
+    border: 1px solid red;
+    height: 20rem;
+    width: 20rem;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#OppName {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
