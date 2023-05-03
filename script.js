@@ -1,4 +1,7 @@
-turn = 1
+let turn = 1
+function render() {
+ createElement
+}
 
 class Pokemon {
     constructor(name, HP, type) {

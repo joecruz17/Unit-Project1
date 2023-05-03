@@ -1,32 +1,65 @@
-
-div {
+* {
     border: 1px solid red;
-    height: 50rem;
-    width: 50rem;
+    text-align: center;
 }
 
 body {
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
+    /* height: 50rem;
+    width: 50rem; */
+    grid-template-areas: 
+    "OppName   OppHP"
+    " MyName    Charz"
+    "Pika   MyHP  "
+    "disiplay    AtkBox"
 }
+
+#OppName {
+    grid: OppName;
+    /* height: 400px;
+    width: 400px;
+    text-align: center; */
+}
+
+#OppHP {
+    grid: OppHP;
+}
+
+#MyHP {
+    grid: MyHP;
+}
+
+#MyName {
+    grid: MyName;
+}
+
+#Pika {
+    grid: Pika;
+}
+
+#Char {
+    grid: Charz;
+}
+
+#AtkBox {
+    grid: AtkBox;
+}
+
+#display {
+    grid: display;
+}
+
+
+/* 
+div {
+    
+   
+} */
 
 h1 {
     text-align: center;
 
 }
 
-#OppName {
-    height: 400px;
-    width: 400px;
-    text-align: center;
-}
-
-aside {
-    display:flex;
-    height: auto;
-    width: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
