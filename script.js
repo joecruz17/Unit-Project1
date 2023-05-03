@@ -1,6 +1,17 @@
 let turn = 1
 function render() {
- createElement
+
+}
+
+function battle(playerPoke, AIPoke){
+    while (playerPoke.HP > 0 && AIPoke.HP > 0) {
+        if (turn === 1) {
+            turn *= -1
+        } else {
+            turn *= -1
+        }
+    }
+
 }
 
 class Pokemon {
@@ -14,7 +25,12 @@ class Pokemon {
 
 let pikachu = new Pokemon ("Pikachu", 100, "ElectricType") 
 
-function PokeAtk()
+
+function displayMove(pokemonName, moveAttack, effectivity) {
+    let moveBox = document.getElementById("AtkBox")
+    moveBox.innerHTML = `${pokemonName} used ${moveAttack}! It was ${effectivity}! `
+}
+
 
 
 function ThunderBolt(target) {
@@ -42,6 +58,7 @@ console.log(charizard)
 function flamethrower(target) {
     let damage = 20
     target.HP -= damage
+    return "Flamethrower"
 }
 
 function wingAtk(target) {
@@ -49,10 +66,23 @@ function wingAtk(target) {
     if(target.type === ElectricType) {
         target.HP -= damage / 2
         } else target.HP -= damage
+        return "Wing Attack"
 }
 
 function blastBurn(target, user) {
     let damage = 45
     target.HP -= damage
     user.HP -= 30
+    return "Blast Burn"
+
 }
+
+
+function OppMove() {
+
+}
+function PokeAtk(moveFunc, ) {
+
+}
+
+

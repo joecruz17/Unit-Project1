@@ -1,6 +1,7 @@
 * {
     border: 1px solid red;
     text-align: center;
+    
 }
 
 body {
@@ -18,37 +19,72 @@ body {
 
 }
 
+
+
+
 #OppName {
     grid: OppName;
-    /* height: 400px;
-    width: 400px;
-    text-align: center; */
+    height: 100px;
+    width: 100px;
+    text-align: center;
 }
 #OppHP {
     grid: OppHP;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
 #MyHP {
     grid: MyHP;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
 #MyName {
     grid: MyName;
+    height: 100px;
+    width: 100px;
+    text-align: center;
 }
 #Pika {
     grid: Pika;
+    height: 70px;
+    width: 70px;
+    text-align: center;
 }
 #Char {
     grid: Charz;
+    height: 70px;
+    width: 70px;
+    text-align: center;
 }
 #AtkBox {
     grid: AtkBox;
-    display: flex;
+
+display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+  
 }
 #display {
     grid: display;
+    height: 70px;
+    width: 70px;
+    text-align: center;
 }
 
+article {
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
 /* 
 div {
