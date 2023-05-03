@@ -4,16 +4,18 @@
 }
 
 body {
+    height: auto;
+    width: auto;
     display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    /* height: 50rem;
-    width: 50rem; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 30% 30% 20%;
+
     grid-template-areas: 
     "OppName   OppHP"
     " MyName    Charz"
     "Pika   MyHP  "
     "disiplay    AtkBox"
+;
 }
 
 #OppName {
@@ -22,31 +24,27 @@ body {
     width: 400px;
     text-align: center; */
 }
-
 #OppHP {
     grid: OppHP;
 }
-
 #MyHP {
     grid: MyHP;
 }
-
 #MyName {
     grid: MyName;
 }
-
 #Pika {
     grid: Pika;
 }
-
 #Char {
     grid: Charz;
 }
-
 #AtkBox {
     grid: AtkBox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 #display {
     grid: display;
 }
