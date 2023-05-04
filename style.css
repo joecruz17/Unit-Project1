@@ -12,10 +12,10 @@ body {
     grid-template-rows: 20% 30% 30% 20%;
 
     grid-template-areas: 
-    "OppName   OppHP"
-    " MyName    Charz"
-    "Pika   MyHP  "
-    "disiplay    AtkBox";
+    "OppName OppHP"
+    "MyName Charz"
+    "Pika MyHP"
+    "disiplay AtkBox";
 
 }
 
