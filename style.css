@@ -3,8 +3,14 @@
     text-align: center;
     
 }
+/* 
+#background {
+    height: 100rem;
+    width: 100rem;
+} */
 
 body {
+    background-image: url("https://imgur.com/7HnHudI.jpg" );
     height: auto;
     width: auto;
     display:grid;
@@ -27,12 +33,15 @@ body {
     height: 100px;
     width: 100px;
     text-align: center;
+    grid-column-start: 1;
 }
 #OppHP {
     grid: OppHP;
     height: 50px;
     width: 50px;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 #MyHP {
     grid: MyHP;

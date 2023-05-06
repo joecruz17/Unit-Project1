@@ -17,14 +17,14 @@ const moveArr =[
     { id: "tbolt", attack : ThunderBolt}, 
     { id: "tackle", attack : Tackle}, 
     { id: "thunder", attack : Thunder}, 
-    { id: "sixmil", attack:  flamethrower} 
+    { id: "sixmil", attack:  sixMil} 
 ]
 
 
 function render() {
     moveArr.forEach((move) => {
         let btn = document.getElementById(move.id)
-        console.log(btn)
+        // console.log(btn)
         btn.addEventListener("click", () => move.attack(charizard))
     })
     
@@ -50,6 +50,15 @@ function battle(playerPoke, AIPoke){
 function displayMove(pokemonName, moveAttack, effectivity) {
     let moveBox = document.getElementById("display")
     moveBox.innerHTML = `${pokemonName} used ${moveAttack}! It was ${effectivity}! `
+}
+
+
+const charzAtks = [flamethrower, wingAtk, blastBurn]
+
+function OppMove(target) {
+    charzAtks.forEach ((oppMove) => {
+        
+    }
 }
 
 
@@ -85,9 +94,18 @@ function Thunder(target) {
     displayMove("Pikachu", "Thunder", effective )
 }
 
+function sixMil(target) {
+    let damage = 50
+    if(target.type === "FlyingType") {
+        target.HP -= damage * 2
+        effective = "Super-Effective"
+    } else { 
+        target.HP -= damage
+        effective = "Effective"
+    }
+    displayMove("Pikachu", "6 Million Volts", effective )
+}
 
-
-console.log(charizard)
 
 function flamethrower(target) {
     let damage = 20
@@ -112,9 +130,7 @@ function blastBurn(target, user) {
 }
 
 
-// function OppMove() {
 
-// }
 function PokeAtk() {
     
 }
