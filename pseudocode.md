@@ -17,7 +17,15 @@ add event listeners to each atk button and when they are clicked, call the butto
 
 // display attack animation and/or sounds, if possible. USE DOM
 
-// opponent uses random mov (metho or function depending on which works best) CREATE FUNCTION
+// opponent uses random mov (metho or function depending on which works best) CREATE FUNCTION DONE
 
 // if pokemons HP === zero the battle is over and a display message appears "Pidgey Fainted. You beat Youngster Joey. You win $$$"
+
 USE DOM -> STORE IN RENDER? CHECK IF YOUR OR ENEMY HP IS ZERO, END GAME, IF NOT CONTINUE
+
+
+Add an HP number that changes with each attack
+maybe make a bar
+
+to display hit points
+grab element, change innerHTML to equal reminaing tagerts HP after damage calculation.
