@@ -24,10 +24,8 @@ const moveArr =[
 function render() {
     moveArr.forEach((move) => {
         let btn = document.getElementById(move.id)
-        // console.log(btn)
         btn.addEventListener("click", () => move.attack(charizard))
     })
-    
 }
 
 
@@ -48,24 +46,29 @@ function battle(playerPoke, AIPoke){
 
 
 function displayMove(pokemonName, moveAttack, effectivity) {
-    let moveBox = document.getElementById("display")
+    const moveBox = document.getElementById("display")
     moveBox.innerHTML = `${pokemonName} used ${moveAttack}! It was ${effectivity}! `
 }
 
 
 const charzAtks = [flamethrower, wingAtk, blastBurn]
 
-function OppMove(target) {
-    charzAtks.forEach ((oppMove) => {
-        
-    }
+function OppMove() {
+   const idx =  Math.floor(Math.random() * charzAtks.length)
+   let charAtk = charzAtks[idx] 
+   charAtk(pikachu)
 }
 
 
 
+
+
+
+let effective = "Effective"
+
 function ThunderBolt(target) {
     let damage = 20
-    let effective = ""
+   
     if(target.type === "FlyingType" || "WaterType") {
         target.HP -= damage * 2
         effective = "Super-Effective"
@@ -110,30 +113,31 @@ function sixMil(target) {
 function flamethrower(target) {
     let damage = 20
     target.HP -= damage
-    return "Flamethrower"
+    effective = "Effective"
+   displayMove("Charizard", "Flamethrower", effective)
 }
 
 function wingAtk(target) {
     let damage = 20
     if(target.type === ElectricType) {
         target.HP -= damage / 2
-        } else target.HP -= damage
-        return "Wing Attack"
+        effective = "Uneffective"
+    } else { 
+        target.HP -= damage
+    }
+    displayMove("Charizard", "Wing Attack", effective)
 }
 
-function blastBurn(target, user) {
+function blastBurn(target) {
     let damage = 45
     target.HP -= damage
-    user.HP -= 30
-    return "Blast Burn"
+    charizard.HP -= 30
+    effective = "Effective"
+
+    displayMove("Charizard", "Blast Burn", effective)
 
 }
 
-
-
-function PokeAtk() {
-    
-}
 
 render()
 
