@@ -150,6 +150,10 @@ function blastBurn(target) {
 }
 
 
-render()
 
+function editHPBar (target) {
+    let changeMyHP = document.getElementById("MyHP")
+    changeMyHP.innerHTML = target.HP
+    
+}
 
