@@ -1,23 +1,36 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     
 }
 
+#background {
+    position: absolute;
+    object-fit: cover;
+
+}
+
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("https://imgur.com/7HnHudI.jpg" );
+    background-repeat:no-repeat;
+    background-size: cover;
     height: auto;
     width: auto;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 30% 30% 20%;
+    grid-template-rows: 200px 1fr 1fr 200px;
 
     grid-template-areas: 
+    "header header"
     "OppName OppHP"
     "MyName Charz"
     "Pika MyHP"
     "disiplay AtkBox";
+
+    height: 100vh;
 
 }
 
@@ -69,12 +82,11 @@ body {
     text-align: center;
 }
 #AtkBox {
-    grid: AtkBox;
-
-display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    grid-area: AtkBox;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
   
 }
 #display {
@@ -96,14 +108,9 @@ article {
     
 }
 
-/* 
-div {
-    
-   
-} */
-
 h1 {
     text-align: center;
 
 }
 
+ 

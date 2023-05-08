@@ -29,3 +29,7 @@ maybe make a bar
 
 to display hit points
 grab element, change innerHTML to equal reminaing tagerts HP after damage calculation.
+
+add an if statement that only allows pikachu to make a move if turn = 1, cause he can keep using attacks in front of charizard
+
+create a restart button re rendering the game

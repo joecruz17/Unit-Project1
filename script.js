@@ -86,6 +86,7 @@ function ThunderBolt(target) {
     turn *= -1
     displayMove("Pikachu", "ThunderBolt", effective )
 }
+
 function Tackle(target) {
     const damage = 10
     target.HP -= damage
@@ -144,7 +145,6 @@ function blastBurn(target) {
     target.HP -= damage
     charizard.HP -= 30
     effective = "Effective"
-
     displayMove("Charizard", "Blast Burn", effective)
 
 }
@@ -154,6 +154,7 @@ function blastBurn(target) {
 function editHPBar (target) {
     let changeMyHP = document.getElementById("MyHP")
     changeMyHP.innerHTML = target.HP
-    
 }
 
+
+render()
