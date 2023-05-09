@@ -74,6 +74,7 @@ function endGame() {
 let effective = "Effective"
 
 function ThunderBolt(target) {
+    if (turn = 1) {
     let damage = 20
    
     if(target.type === "FlyingType" || "WaterType") {
@@ -85,6 +86,7 @@ function ThunderBolt(target) {
     }
     turn *= -1
     displayMove("Pikachu", "ThunderBolt", effective )
+    }
 }
 
 function Tackle(target) {
@@ -96,6 +98,7 @@ function Tackle(target) {
 }
 
 function Thunder(target) {
+    if (turn = 1) {
     let damage = 25
     if(target.type === "FlyingType") {
         target.HP -= damage * 2
@@ -106,9 +109,11 @@ function Thunder(target) {
     }
     turn *= -1
     displayMove("Pikachu", "Thunder", effective )
+    }
 }
 
 function sixMil(target) {
+    if (turn = 1) {
     let damage = 50
     if(target.type === "FlyingType") {
         target.HP -= damage * 2
@@ -119,6 +124,7 @@ function sixMil(target) {
     }
     turn *= -1
     displayMove("Pikachu", "6 Million Volts", effective )
+    }
 }
 
 
