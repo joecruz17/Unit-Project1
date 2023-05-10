@@ -16,9 +16,25 @@
     flex-direction: column;
 }
 
+
+#OppName {
+    
+    height: 30px;
+    width: 100px;
+    text-align: center;
+   
+}
+#OppHP {
+    
+    /* height: 50px;
+    width: 50px; */
+    text-align: center;
+}
+
 #Charz {
    
 margin-top: 10% ;
+margin-right: 20%;
 }
 
 #background {
@@ -44,61 +60,58 @@ body {
 }
 
 
-
-#OppName {
-    
-    height: 30px;
-    width: 100px;
-    text-align: center;
-    grid-column-start: 1;
+.mainPoke{
+    display: flex;
 }
-#OppHP {
+.mainInfo{
+    display: flex;
+    flex:2;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    
+}
+
+.
+
+/* #MyHP {
     
     /* height: 50px;
     width: 50px; */
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 5;
+    /* text-align: center; */
 }
-#MyHP {
-    
-    /* height: 50px;
-    width: 50px; */
-    text-align: center;
-}
-#MyName {
-    
+/* #MyName {
+/*     
     height: 30px;
-    width: 100px;
-    text-align: center;
-}
-#Pika {
-    
-    height: 70px;
-    width: 70px;
-    text-align: center;
-}
+    width: 100px; */
+    /* text-align: center; */
+} 
+/* .Pika {
+    margin-left: 20%;
+  
+} */
 
+
+.bottomDisp{
+    display: flex;
+}
 #AtkBox {
-    
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
-    cursor: pointer;
+ display: flex;
+ flex-wrap: wrap;
   
 }
 #display {
-    
-    height: 70px;
-    width: 70px;
+
     text-align: center;
+}
+
+.pikaMoves {
+    flex: 4
 }
 
 article {
     text-align: center;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -108,9 +121,5 @@ article {
 }
 
 
-h1 {
-    text-align: center;
-    
-}
 
  
