@@ -4,6 +4,23 @@
     
 }
 
+.aiOpp{
+    display: flex;
+    /* height: 250px; */
+    
+}
+
+.oppInfo{
+    display:flex;
+    flex:2;
+    flex-direction: column;
+}
+
+#Charz {
+   
+margin-top: 10% ;
+}
+
 #background {
     position: absolute;
     object-fit: cover;
@@ -17,21 +34,7 @@ body {
     background-image: url("https://imgur.com/7HnHudI.jpg" );
     background-repeat:no-repeat;
     background-size: cover;
-    height: auto;
-    width: auto;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 1fr 1fr 200px;
-
-    grid-template-areas: 
-    "header header"
-    "OppName OppHP"
-    "MyName Charz"
-    "Pika MyHP"
-    "disiplay AtkBox";
-
-    height: 100vh;
-
+   
 }
 
 .greenBar {
@@ -43,14 +46,14 @@ body {
 
 
 #OppName {
-    grid: OppName;
-    height: 100px;
+    
+    height: 30px;
     width: 100px;
     text-align: center;
     grid-column-start: 1;
 }
 #OppHP {
-    grid: OppHP;
+    
     /* height: 50px;
     width: 50px; */
     text-align: center;
@@ -58,31 +61,26 @@ body {
     grid-column-end: 5;
 }
 #MyHP {
-    grid: MyHP;
+    
     /* height: 50px;
     width: 50px; */
     text-align: center;
 }
 #MyName {
-    grid: MyName;
-    height: 100px;
+    
+    height: 30px;
     width: 100px;
     text-align: center;
 }
 #Pika {
-    grid: Pika;
+    
     height: 70px;
     width: 70px;
     text-align: center;
 }
-#Char {
-    grid: Charz;
-    height: 70px;
-    width: 70px;
-    text-align: center;
-}
+
 #AtkBox {
-    grid-area: AtkBox;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -91,7 +89,7 @@ body {
   
 }
 #display {
-    grid: display;
+    
     height: 70px;
     width: 70px;
     text-align: center;
@@ -109,17 +107,10 @@ article {
     
 }
 
-#title {
-    /* grid-area: header; */
-    /* text-align:center; */
-    display: block;
-    margin-left: 75%;
-}
 
 h1 {
     text-align: center;
     
-
 }
 
  
