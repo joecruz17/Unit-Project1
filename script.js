@@ -32,7 +32,7 @@ function render() {
 function displayMove(pokemonName, moveAttack, effectivity) {
     const moveBox = document.getElementById("display")
     moveBox.innerHTML = `${pokemonName} used ${moveAttack}! It was ${effectivity}! `
-    setTimeout(endGame, 3000)
+    setTimeout(endGame, 2500)
 }
 
 

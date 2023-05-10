@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     text-align: center;
     
 }
@@ -87,6 +87,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     padding: 10px;
+    cursor: pointer;
   
 }
 #display {
@@ -108,8 +109,16 @@ article {
     
 }
 
+#title {
+    /* grid-area: header; */
+    /* text-align:center; */
+    display: block;
+    margin-left: 75%;
+}
+
 h1 {
     text-align: center;
+    
 
 }
 

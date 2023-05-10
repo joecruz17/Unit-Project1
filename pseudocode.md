@@ -33,3 +33,6 @@ grab element, change innerHTML to equal reminaing tagerts HP after damage calcul
 add an if statement that only allows pikachu to make a move if turn = 1, cause he can keep using attacks in front of charizard
 
 create a restart button re rendering the game
+ make things simpler
+
+utilize flexbox instead of grid and focus on putting everything within parent divs to
