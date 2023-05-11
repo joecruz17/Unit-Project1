@@ -75,6 +75,9 @@ function endGame() {
 let effective = "Effective"
 
 function ThunderBolt(target) {
+    let tBoltGif = document.getElementById("Pika")
+    tBoltGif.getElementsByTagName("img")[0].src = " https://imgur.com/PpGVhBm.gif";
+   
     if (turn === 1) {
     let damage = 20
    
@@ -92,6 +95,8 @@ function ThunderBolt(target) {
 }
 
 function Tackle(target) {
+    let tackleGif = document.getElementById("Pika")
+    tackleGif.getElementsByTagName("img")[0].src = "https://imgur.com/etUEmyU.gif";
     const damage = 10
     target.HP -= damage
     effective = "Effective"
@@ -101,6 +106,9 @@ function Tackle(target) {
 }
 
 function Thunder(target) {
+    let thunderGif = document.getElementById("Pika")
+    thunderGif.getElementsByTagName("img")[0].src = "https://imgur.com/OeJWznC.gif";
+
     if (turn = 1) {
     let damage = 25
     if(target.type === "FlyingType") {
@@ -117,6 +125,7 @@ function Thunder(target) {
 }
 
 function sixMil(target) {
+    let sixMilGif = document.getElementById("Pika")
     if (turn = 1) {
     let damage = 50
     if(target.type === "FlyingType") {
@@ -134,6 +143,8 @@ function sixMil(target) {
 
 
 function flamethrower(target) {
+    let flameGif = document.getElementById("Charz")
+    flameGif.getElementsByTagName("img")[0].src = "https://imgur.com/8p2QrQA.gif";
     let damage = 20
     target.HP -= damage
     effective = "Effective"
@@ -142,6 +153,8 @@ function flamethrower(target) {
 }
 
 function wingAtk(target) {
+    let wingGif = document.getElementById("Charz")
+    wingGif.getElementsByTagName("img")[0].src = "https://imgur.com/o6n5Uzv.gif";
     let damage = 20
     if(target.type === "ElectricType") {
         target.HP -= damage / 2
@@ -154,14 +167,15 @@ function wingAtk(target) {
 }
 
 function blastBurn(target) {
+    let blastGif = document.getElementById("Charz")
+    blastGif.getElementsByTagName("img")[0].src = "https://imgur.com/YdL42bo.gif";
     let damage = 45
     target.HP -= damage
     charizard.HP -= 30
     effective = "Effective"
     displayMove("Charizard", "Blast Burn", effective)
     editHPBar(pikachu)
-    let blastGif = document.getElementById("Charz")
-
+    
     
 }
 

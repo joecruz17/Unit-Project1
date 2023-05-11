@@ -17,13 +17,13 @@
 }
 
 
-#OppName {
+/* #OppName {
     
     height: 30px;
     width: 100px;
     text-align: center;
    
-}
+} */
 #OppHP {
     
     /* height: 50px;
@@ -50,6 +50,9 @@ body {
     background-image: url("https://imgur.com/7HnHudI.jpg" );
     background-repeat:no-repeat;
     background-size: cover;
+    position: relative;
+    
+    
    
 }
 
@@ -78,24 +81,9 @@ body {
     
 }
 
-.
-
-/* #MyHP {
-    
-    /* height: 50px;
-    width: 50px; */
-    /* text-align: center; */
 }
-/* #MyName {
-/*     
-    height: 30px;
-    width: 100px; */
-    /* text-align: center; */
-} 
-/* #Pika {
-    margin-left: 20%;
-  
-} */
+
+
 
 
 .bottomDisp{
@@ -139,6 +127,11 @@ article {
     align-items: center;
     
     
+}
+
+.ourNames{
+    /* text-align: center; */
+    font-size: 30px;
 }
 
 
