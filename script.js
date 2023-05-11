@@ -25,9 +25,18 @@ function render() {
     moveArr.forEach((move) => {
         let btn = document.getElementById(move.id)
         btn.addEventListener("click", () => move.attack(charizard))
+        let startPika = document.getElementById('Pika')
+        let startCharz = document.getElementById('Charz')
+        startPika.getElementsByTagName("img")[0].src = "https://i.imgur.com/mUYo7MZ.png";
+        startCharz.getElementsByTagName("img")[0].src = "https://i.imgur.com/G4yR30H.png";
+        charizard.HP = 100
+        pikachu.HP = 100
     })
 }
 
+
+const newGameBtn = document.getElementById("newGame")
+newGameBtn.addEventListener('click', render)
 
 
 function displayMove(pokemonName, moveAttack, effectivity) {
@@ -193,6 +202,3 @@ function editHPBar (target) {
 }
 
 render()
-
-const newGameBtn = document.getElementById("newGame")
-newGameBtn.addEventListener('click', render)
