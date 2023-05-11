@@ -13,15 +13,15 @@ add event listeners to each atk button and when they are clicked, call the butto
 
 // have each attack deal damage to the hitpoints(hp) DONE
 
-// display via words what attack is being used when each pokemon is attacking. USE DOM
+// display via words what attack is being used when each pokemon is attacking. USE DOM DONE
 
 // display attack animation and/or sounds, if possible. USE DOM
 
 // opponent uses random mov (metho or function depending on which works best) CREATE FUNCTION DONE
 
-// if pokemons HP === zero the battle is over and a display message appears "Pidgey Fainted. You beat Youngster Joey. You win $$$"
+// if pokemons HP === zero the battle is over and a display message appears "Pidgey Fainted. You beat Youngster Joey. You win $$$" DONE
 
-USE DOM -> STORE IN RENDER? CHECK IF YOUR OR ENEMY HP IS ZERO, END GAME, IF NOT CONTINUE
+USE DOM -> STORE IN RENDER? CHECK IF YOUR OR ENEMY HP IS ZERO, END GAME, IF NOT CONTINUE DONE
 
 
 Add an HP number that changes with each attack
@@ -33,6 +33,7 @@ grab element, change innerHTML to equal reminaing tagerts HP after damage calcul
 add an if statement that only allows pikachu to make a move if turn = 1, cause he can keep using attacks in front of charizard
 
 create a restart button re rendering the game
- make things simpler
 
+
+ make things simpler
 utilize flexbox instead of grid and focus on putting everything within parent divs to

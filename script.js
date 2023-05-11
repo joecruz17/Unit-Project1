@@ -29,6 +29,7 @@ function render() {
 }
 
 
+
 function displayMove(pokemonName, moveAttack, effectivity) {
     const moveBox = document.getElementById("display")
     moveBox.innerHTML = `${pokemonName} used ${moveAttack}! It was ${effectivity}! `
@@ -74,7 +75,7 @@ function endGame() {
 let effective = "Effective"
 
 function ThunderBolt(target) {
-    if (turn = 1) {
+    if (turn === 1) {
     let damage = 20
    
     if(target.type === "FlyingType" || "WaterType") {
@@ -87,6 +88,7 @@ function ThunderBolt(target) {
     turn *= -1
     displayMove("Pikachu", "ThunderBolt", effective )
     }
+    editHPBar(charizard)
 }
 
 function Tackle(target) {
@@ -95,6 +97,7 @@ function Tackle(target) {
     effective = "Effective"
     turn *= -1
     displayMove("Pikachu", "Tackle", effective )
+    editHPBar(charizard)
 }
 
 function Thunder(target) {
@@ -110,6 +113,7 @@ function Thunder(target) {
     turn *= -1
     displayMove("Pikachu", "Thunder", effective )
     }
+    editHPBar(charizard)
 }
 
 function sixMil(target) {
@@ -125,6 +129,7 @@ function sixMil(target) {
     turn *= -1
     displayMove("Pikachu", "6 Million Volts", effective )
     }
+    editHPBar(charizard)
 }
 
 
@@ -133,6 +138,7 @@ function flamethrower(target) {
     target.HP -= damage
     effective = "Effective"
    displayMove("Charizard", "Flamethrower", effective)
+   editHPBar(pikachu)
 }
 
 function wingAtk(target) {
@@ -144,6 +150,7 @@ function wingAtk(target) {
         target.HP -= damage
     }
     displayMove("Charizard", "Wing Attack", effective)
+    editHPBar(pikachu)
 }
 
 function blastBurn(target) {
@@ -152,15 +159,26 @@ function blastBurn(target) {
     charizard.HP -= 30
     effective = "Effective"
     displayMove("Charizard", "Blast Burn", effective)
+    editHPBar(pikachu)
+    let blastGif = document.getElementById("Charz")
 
+    
 }
 
 
 
 function editHPBar (target) {
+    if(target === charizard) {
+        let changeOppHP = document.getElementById("OppHP")
+        changeOppHP.innerHTML = target.HP
+    }
+   else if (target === pikachu) {
     let changeMyHP = document.getElementById("MyHP")
     changeMyHP.innerHTML = target.HP
+   }    
 }
 
-
 render()
+
+const newGameBtn = document.getElementById("newGame")
+newGameBtn.addEventListener('click', render)

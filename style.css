@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     
 }
@@ -57,6 +57,13 @@ body {
     height: 20px;
     width: 400px;
     background-color: greenyellow;
+    /* background: linear-gradient(
+    to right,
+    greenyellow 0%,
+    greenyellow calc(var(--percentage) * 1%),
+    red calc(var(--percentage) * 1%),
+    red 100%
+  ); */
 }
 
 
@@ -85,7 +92,7 @@ body {
     width: 100px; */
     /* text-align: center; */
 } 
-/* .Pika {
+/* #Pika {
     margin-left: 20%;
   
 } */
@@ -93,6 +100,12 @@ body {
 
 .bottomDisp{
     display: flex;
+
+}
+
+.moveAndBG{
+    display: flex;
+    flex-direction: column;
 }
 #AtkBox {
  display: flex;
@@ -100,12 +113,20 @@ body {
   
 }
 #display {
-
+    font-size: 200%;
     text-align: center;
+    margin: 5%;
+}
+
+.newGame {
+    flex: 2;
 }
 
 .pikaMoves {
-    flex: 4
+    flex: 4;
+    background-color: yellow;
+    font-size: 150%;
+    
 }
 
 article {
